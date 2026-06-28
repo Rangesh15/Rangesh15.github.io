@@ -111,3 +111,24 @@ a { color: inherit; text-decoration: none; }
   .contact { padding: 36px 22px; }
   .hero h1 { letter-spacing: -0.05em; }
 }
+/* Clickable publication cards */
+
+.publication-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.publication-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.publication-card h3 {
+  transition: color 0.2s ease;
+}
+
+.publication-card:hover h3 {
+  color: var(--accent);
+}
